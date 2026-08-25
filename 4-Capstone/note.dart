@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class Note {
   int id;
   String title;
