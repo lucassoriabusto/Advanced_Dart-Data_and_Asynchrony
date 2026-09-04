@@ -5,8 +5,8 @@ void main() {
   // 1. Creo una Note normalmente
   Note nota1 = Note(
     1,
-    "Estudiar Dart",
-    "Repasar JSON",
+    "Stady Dart",
+    "Review JSON",
     DateTime.now(),
   );
 
@@ -27,16 +27,16 @@ void main() {
   Map<String, dynamic> datosDecodificados = jsonDecode(jsonString);
 
   print("");
-  print("MAP DECODIFICADO:");
+  print("DECODED MAP:");
   print(datosDecodificados);
 
   // 5. Creo una nueva Note usando fromJson()
   Note nota2 = Note.fromJson(datosDecodificados);
 
   print("");
-  print("NOTA RECONSTRUIDA:");
+  print("RECONSTRUCTED NOTE:");
   print("ID: ${nota2.id}");
-  print("Título: ${nota2.title}");
-  print("Cuerpo: ${nota2.body}");
-  print("Fecha: ${nota2.createdAt}");
+  print("Title: ${nota2.title}");
+  print("Body: ${nota2.body}");
+  print("Date: ${nota2.createdAt}");
 }
