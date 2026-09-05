@@ -1,18 +1,30 @@
-note.dart
-→ clase Note
-→ toJson()
-→ fromJson()
+# Estructura del proyecto
 
-note_storage.dart
-→ leer archivos
-→ escribir archivos
+## `note.dart`
 
-note_http.dart
-→ GET
-→ POST
+Modelo de datos de las notas.  
+`Note`  
+`toJson()`  
+`fromJson()`
 
-note_stream.dart
-→ Stream de notas
+## `note_storage.dart`
 
-main.dart
-→ coordina todo
+Gestión del almacenamiento local.  
+`writeFile()`  
+`readFile()`
+
+## `note_io.dart`
+
+Solicita los datos al usuario desde la terminal para crear una nueva nota.  
+`prompt()`
+
+## `note_http.dart`
+
+Comunicación con la API mediante solicitudes HTTP.  
+`GET`  
+`POST`
+
+## `note_stream.dart`
+
+Gestión del flujo de datos mediante Streams.  
+`streamNotes()`
