@@ -4,6 +4,6 @@ Future<String> simulateNetworkCall() async {
 }
 
 void main() async {
-  String result = await simulateNetworkCall();
+  final result = await simulateNetworkCall();
   print(result);
 }
